@@ -1,0 +1,9 @@
+= render partial: 'header'
+.Form-wrapper
+  .Form
+    .Form__post
+      教えてほしい写真
+    = form_with model: @photo, local: true do |form|
+      = form.file_field :image, class: 'Form__image Part'
+      = form.text_field :text, placeholder: '写真の情報', class: 'Form__text Part'
+      = form.submit '送信', class: 'Form__submit Part'

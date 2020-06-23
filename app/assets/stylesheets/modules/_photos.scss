@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header{
+  height: 90px;
+  background-color: #fff;
+  padding: 20px  ;
+  display: flex;
+  justify-content: center;
+  &__left{
+    font-size: 40px;
+    margin-right: 200px;
+    &--link{
+      text-decoration: none;
+      color: black;
+    }
+  }
+  &__right{
+    font-size: 30px;
+    display: flex;
+    &--destroy{
+      display: block;
+      text-decoration: none;
+      color: black;
+      border: 3px solid black;
+      margin-right: 20px;
+    }
+    &--new{
+      display: block;
+      text-decoration: none;
+      color: black;
+      border: 3px solid black;
+    }
+    &--session{
+      display: block;
+      text-decoration: none;
+      color: black;
+      border: 3px solid black;
+      margin-right: 20px;
+    }
+    &--regist{
+      display: block;
+      text-decoration: none;
+      color: black;
+      border: 3px solid black;
+    }
+  }
+}
+
+
+// photos#index
+.Contents{
+  height: calc(100vh - 90px);
+  background-color: #f5f5f3;
+  overflow: scroll;
+  &__guide{
+    
+  }
+  .Content{
+    float: left;
+    margin: 30px;
+    height: 400px;
+    width: 400px;
+    background-color: #FFFFDD;
+    &__name{
+      height: 50px;
+      width: 400px;
+      font-size: 30px;
+      margin-left: 10px;
+      line-height: 50px;
+    }
+    &__image{  
+      height: 300px;
+      width: 400px;
+      background-color: #fff;
+    }
+    &__text{
+      height: 50px;
+      width: 400px;
+      font-size: 20px;
+      padding: 5px;
+    }
+  }
+}
+
+
+// photos#new
+.Form-wrapper{
+  height: calc(100vh - 90px);
+  background-color: #f5f5f3;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  .Form{
+    height: 400px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .Part{
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__post{
+      height: 100px;
+      font-size: 30px;
+      line-height: 100px;
+    }
+    &__name{
+      height: 50px;
+      width: 400px;
+      padding-left: 20px;
+      font-size: 20px;
+    }
+    &__image{
+      height: 50px;
+      width: 400px;
+      resize: none;
+      font-size: 20px;
+      padding-top: 10px;
+      // padding-left: 20px;
+    }
+    &__text{
+      height: 50px;
+      width: 400px;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    &__submit{
+      display: inline-block;
+      height: 50px;
+      width: 100px;
+      font-size: 20px;
+      margin-left: 150px;
+    }
+  }
+}
+
+
+
+// photo#create
+
+.CreateWrapper{
+  height: calc(100vh - 90px);
+  background-color: #f5f5f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Create{
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding:40px;
+    &__success{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__link{
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// photo#show
+
+.ShowWrapper{
+  height: calc(100vh - 90px);
+  background-color: #f5f5f3;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  .Show{
+    width: 600px;
+    height: 550px;
+    background-color: #FFFFDD;
+    margin-left: 30px;
+    &__name{
+      height: 50px;
+      line-height: 50px;
+      font-size: 40px;
+      text-align: center;
+    }
+    &__image{
+      height: 450px;
+      background-color: #fff;
+    }
+    &__text{
+      height: 50px;
+      line-height: 50px;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  .Comments{
+    height: 500px;
+    width: 600px;
+    background-color: #fff;
+    margin-right: 30px;
+    &__guide{
+      height: 50px;
+      font-size: 25px;
+      padding-left: 10px;
+      line-height: 50px;
+    }
+    &__field{
+      height: 400px;
+      background-color: #FFFFDD;
+      font-size: 25px;
+      overflow: scroll;
+      &__box{
+        margin: 10px;
+        display: flex;
+        &__name{
+          margin-right: 5px;
+          color: #5D99FF;
+        }
+        &__text{
+          word-break: break-all;
+        }
+      }
+    }
+    &__form{
+      height: 50px;
+      width: 100%;
+      padding: 2px;
+      display: flex;
+      &--text{
+        resize: none;
+        height: 45px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      &--submit{
+        height: 45px;
+        width: 60px;
+        margin: 0px 10px;
+      }
+    }
+  }
+}
+

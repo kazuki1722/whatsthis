@@ -1,0 +1,16 @@
+= render partial: 'header'   
+
+  
+.Contents
+  .Contents__guide
+    *画像をクリックすると詳細ページに飛べます
+    = paginate(@photos)
+  - @photos.each do |photo|
+    .Content
+      .Content__name
+        = photo.user.nickname
+      .Content__image
+        = link_to image_tag("#{photo.image}", height: '300', width: '400'), photo_path(photo.id), method: :get
+      .Content__text
+        = photo.text
+  

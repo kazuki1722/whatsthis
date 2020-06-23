@@ -1,0 +1,33 @@
+= render partial: 'header'
+
+.ShowWrapper
+  .Show
+    .Show__name
+      = @photo.user.nickname
+    .Show__image
+      = image_tag "#{@photo.image}", height: '450', width: '600'
+    .Show__text
+      = @photo.text
+  .Comments
+    .Comments__guide
+      ＜コメント一覧＞
+    .Comments__field
+      - @comments.each do |comment|
+        .Comments__field__box
+          .Comments__field__box__name
+            = "#{comment.user.nickname}:"
+          .Comments__field__box__text
+            = comment.text
+    .Comments__form
+      -if current_user
+        = form_with model: [@photo, @comment], local: true, class: 'Comments__form' do |form|
+          = form.text_area :text, placeholder: 'コメントする', rows: '2', class: 'Comments__form--text'
+          = form.submit "送信", class: 'Comments__form--submit'
+      -else
+        ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+     
+
+   
+        
+
+    
