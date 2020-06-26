@@ -19,6 +19,10 @@
   &__right{
     font-size: 30px;
     display: flex;
+    &--user-name{
+      color: #5D99FF;
+      margin-right: 50px;
+    }
     &--destroy{
       display: block;
       text-decoration: none;
