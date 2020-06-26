@@ -2,7 +2,7 @@ class PhotosController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @photos = Photo.includes(:user).order(created_at: 'DESC').page(params[:page]).per(9)
+    @photos = Photo.includes(:user).order(created_at: 'DESC').page(params[:page]).per(12)
   end
 
   def new

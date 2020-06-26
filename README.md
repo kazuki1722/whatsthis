@@ -33,8 +33,9 @@ Things you may want to cover:
 # 実装した機能
 - deviseでのユーザー管理機能
 - 投稿一覧画面、kaminariでのページネーション
-- 投稿詳細ページと、そのページにコメント投稿機能
+- 投稿詳細ページと、そのページにコメント送信機能
 - carrierwaveとimagemagickによる画像投稿機能
+- コメント送信機能の非同期化
 
 
 #　アプリについて
