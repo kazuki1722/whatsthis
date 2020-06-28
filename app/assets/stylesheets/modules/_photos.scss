@@ -19,10 +19,10 @@
   &__right{
     font-size: 30px;
     display: flex;
-    &--user-name{
-      color: #5D99FF;
-      margin-right: 50px;
-    }
+    // &--user-name{
+    //   color: #5D99FF;
+    //   margin-right: 50px;
+    // }
     &--destroy{
       display: block;
       text-decoration: none;
@@ -190,6 +190,7 @@
       line-height: 50px;
       font-size: 40px;
       text-align: center;
+      color: #5D99FF;
     }
     &__image{
       height: 450px;

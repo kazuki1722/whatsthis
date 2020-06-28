@@ -1,10 +1,10 @@
 .Header
   .Header__left
-    = link_to "WhatsThis?", '/', class: 'Header__left--link'
+    = link_to "WhatsThis?".html_safe, '/', class: 'Header__left--link'
   .Header__right
     -if user_signed_in?
-      .Header__right--user-name
-        = current_user.nickname
+      -# .Header__right--user-name
+      -#   = current_user.nickname
       = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'Header__right--destroy'
       = link_to '投稿する', '/photos/new', class: 'Header__right--new'
     -else
