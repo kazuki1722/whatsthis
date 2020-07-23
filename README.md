@@ -32,7 +32,7 @@ password: sample
 # 使用技術
 - 開発環境　言語：Ruby, Ruby on Rails, haml, scss, javascript, jquery　ツール: Visual Studio Code/Github　DB:MySQL　サーバー：heroku
 
-#　課題や今後実装したい機能
+# 課題や今後実装したい機能
 - 画像投稿時、選択した画像がjavascriptで表示されるようにしたい。
 - いいね機能、またいいねの数での並び替え
 - bootstrapでのdeviseのビューのデザインを整える
